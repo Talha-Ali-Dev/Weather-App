@@ -20,6 +20,9 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
     --container-7xl: 80rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -188,6 +191,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .flex {
     display: flex;
   }
@@ -210,6 +216,12 @@
   .w-full {
     width: 100%;
   }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
@@ -218,6 +230,9 @@
   }
   .max-w-\[90\%\] {
     max-width: 90%;
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -278,9 +293,6 @@
   .bg-\[\#\] {
     background-color: #;
   }
-  .bg-\[url\] {
-    background-color: url;
-  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -302,27 +314,6 @@
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-\[url\(\"\"\)\] {
-    background-image: url("");
-  }
-  .bg-\[url\(\'assets\/storm-clouds\.jpg\'\)\] {
-    background-image: url('assets/storm-clouds.jpg');
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
-  }
-  .bg-\[url\(assets\/\)\] {
-    background-image: url(assets/);
-  }
-  .bg-\[url\(assets\/clou\)\] {
-    background-image: url(assets/clou);
-  }
-  .bg-\[url\(assets\/cloud\)\] {
-    background-image: url(assets/cloud);
-  }
-  .bg-\[url\(assets\/cloud\.png\)\] {
-    background-image: url(assets/cloud.png);
   }
   .from-sky-400 {
     --tw-gradient-from: var(--color-sky-400);
